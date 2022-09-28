@@ -1,37 +1,33 @@
 import React, { useEffect, useState } from 'react';
+import Personal from '../components/PersonalInfo/Personal';
+import Subjects from '../components/Subjects/Subjects';
 import './Main.css'
 
 const Main = () => {
 
-    const [subject, setSubject] = useState([]);
+    const [subjects, setSubjects] = useState([]);
     useEffect(() => {
         fetch('activities.json')
             .then(res => res.json())
-            .then(data => console.log(data))
+            .then(data => setSubjects(data))
     }, [])
     return (
         <div className='grid grid-cols-4 gap-10 '>
-            <div className='col-span-3 gap 10'>
-                <h1>Website Name</h1>
-                <h4>Select your subjects to study</h4>
-                <div className='grid grid-cols-3'>
-                    <div className="card w-96 bg-base-100 shadow-xl">
-                        <figure className="px-10 pt-10">
-                            <img src="https://placeimg.com/400/225/arch" alt="Shoes" className="rounded-xl" />
-                        </figure>
-                        <div className="card-body items-center text-center">
-                            <h2 className="card-title">Shoes!</h2>
-                            <p>If a dog chews shoes whose shoes does he choose?</p>
-                            <div className="card-actions">
-                                <button className="btn btn-primary">Buy Now</button>
-                            </div>
-                        </div>
-                    </div>
-
+            <div className='col-span-3 gap-10 grid grid-cols-3'>
+                <div className='col-span-3'>
+                    <h1>Website Name</h1>
+                    <h4>Select your subjects to study</h4>
                 </div>
+                {
+                    subjects.map(subject => <Subjects
+                        subject={subject}
+                        key={subject.id}
+                    ></Subjects>)
+                }
+
             </div>
             <div>
-                <h1>Personal Info</h1>
+                <Personal></Personal>
             </div>
         </div>
 
