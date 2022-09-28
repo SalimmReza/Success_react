@@ -26,7 +26,7 @@ const Main = () => {
                 }
 
             </div>
-            <div>
+            <div className='px-6'>
                 <Personal></Personal>
             </div>
         </div>
