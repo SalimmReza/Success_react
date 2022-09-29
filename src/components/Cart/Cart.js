@@ -1,13 +1,18 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCoffee, faShoppingBag, faLocation } from '@fortawesome/free-solid-svg-icons'
 
 const Cart = ({ cart }) => {
+    const [brk, setBrk] = useState([]);
+
 
     let value = 0;
     const handleBreakTime = (e) => {
-        value = e.target.innerText;
-        console.log(value);
+
+        const newCart = [e.target.innerText];
+        setBrk(newCart);
+        // console.log(newCart)
+
     }
     // console.log(cart)
     // console.log(cart)
@@ -85,7 +90,7 @@ const Cart = ({ cart }) => {
 
                 <div className='flex space-x-[135px]'>
                     <h2>Break Time</h2>
-                    <h4>{value}<span>Hours</span></h4>
+                    <h4>{brk}<span></span></h4>
                 </div>
             </div>
         </div>
