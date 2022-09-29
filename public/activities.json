@@ -2,61 +2,67 @@
     {
         "id": "124e13b9-2d54-4b2f-a74d-a77b362d6ead",
         "name": "CHEMISTRY",
-        "minage": 13,
+        "minage": 15,
         "maxage": 20,
-        "price": 420,
+        "description": "Chemistry is the branch of science that deals with the properties, composition, and structure of elements and compounds.",
         "time": 1,
         "img": "https://images.unsplash.com/photo-1603126857599-f6e157fa2fe6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
-        "quantity": 0
+        "quantity": 0,
+        "old": "NEW"
     },
     {
         "id": "124e13b9-2d54-4b2f-a74d-a77b362d6ea",
-        "name": "CHEMISTRY",
+        "name": "PHYSICS",
         "minage": 13,
         "maxage": 20,
         "time": 1,
-        "price": 420,
-        "img": "https://images.unsplash.com/photo-1603126857599-f6e157fa2fe6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
-        "quantity": 0
+        "description": "Physics is the natural science that studies matter, its fundamental constituents, its motion and behavior through space and time.",
+        "img": "https://images.unsplash.com/photo-1636466497217-26a8cbeaf0aa?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80",
+        "quantity": 0,
+        "old": "NEW"
     },
     {
         "id": "124e13b9-2d54-4b2f-a74d-a77b362d6ed",
-        "name": "CHEMISTRY",
-        "minage": 13,
+        "name": "Math",
+        "minage": 10,
         "maxage": 20,
         "time": 1,
-        "price": 420,
-        "img": "https://images.unsplash.com/photo-1603126857599-f6e157fa2fe6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
-        "quantity": 0
+        "description": "Mathematics is an area of knowledge that includes such topics as numbers (arithmetic and number theory), formulas and related structures (algebra).",
+        "img": "https://images.unsplash.com/photo-1548690596-f1722c190938?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1174&q=80",
+        "quantity": 0,
+        "old": "NEW"
     },
     {
         "id": "124e13b9-2d54-4b2f-a74d-a77b3626ead",
-        "name": "CHEMISTRY",
-        "minage": 13,
-        "maxage": 20,
+        "name": "Programming",
+        "minage": 18,
+        "maxage": "infinity",
         "time": 1,
-        "price": 420,
-        "img": "https://images.unsplash.com/photo-1603126857599-f6e157fa2fe6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
-        "quantity": 0
+        "description": "Programming involves tasks such as analysis, generating algorithms, profiling algorithms' accuracy and resource consumption, and the implementation.",
+        "img": "https://images.unsplash.com/photo-1605379399642-870262d3d051?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1206&q=80",
+        "quantity": 0,
+        "old": "NEW"
     },
     {
         "id": "124e13b9-2d54-4b2f-a74d-a77b62d6ead",
-        "name": "CHEMISTRY",
-        "minage": 13,
-        "maxage": 20,
+        "name": "Management",
+        "minage": 25,
+        "maxage": 30,
         "time": 1,
-        "price": 420,
-        "img": "https://images.unsplash.com/photo-1603126857599-f6e157fa2fe6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
-        "quantity": 0
+        "description": "Management (or managing) is the administration of an organization, whether it is a business, a non-profit organization, or a government body.",
+        "img": "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+        "quantity": 0,
+        "old": "NEW"
     },
     {
         "id": "124e13b9-2d54-4b2f-a74d-a77362d6ead",
-        "name": "CHEMISTRY",
-        "minage": 13,
+        "name": "History",
+        "minage": 8,
         "maxage": 20,
         "time": 1,
-        "price": 420,
-        "img": "https://images.unsplash.com/photo-1603126857599-f6e157fa2fe6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
-        "quantity": 0
+        "description": "Welcome to My Activity. Data helps make Google services more useful for you. Sign in to review and manage your activity, including things you've searched",
+        "img": "https://images.unsplash.com/photo-1461360370896-922624d12aa1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1174&q=80",
+        "quantity": 0,
+        "old": "OLD"
     }
 ]

@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faDiagramSuccessor } from '@fortawesome/free-solid-svg-icons'
 import Cart from '../Cart/Cart';
 import Subject from '../Subject/Subject';
 import './Main.css'
@@ -25,9 +27,15 @@ const Main = () => {
     return (
         <div className='grid   sm:grid-cols-1 lg:grid-cols-4 gap-10 container '>
             <div className=' sm:col-span-1 lg:col-span-3  gap-10 sm:grid grid-cols-1  lg:grid-cols-3'>
-                <div className='col-span-3'>
-                    <h1>Website Name</h1>
-                    <h4>Select your subjects to study</h4>
+                <div className='col-span-3 sm:mt-[10px] '>
+
+                    <div className='flex lg:mt-20 italic items-center font-bold  text-3xl'>
+                        <FontAwesomeIcon className='h-10 w-20 text-sky-800' icon={faDiagramSuccessor}></FontAwesomeIcon>
+                        <h1> Success Is In Your Hand</h1>
+                    </div>
+
+                    <h4 className=' mx-10 mt-5 text-lg '>Select your subjects to study</h4>
+                    <hr className='h-3 border-sky-600' />
                 </div>
                 {
                     subjects.map(subject => <Subject

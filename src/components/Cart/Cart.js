@@ -52,7 +52,7 @@ const Cart = ({ cart }) => {
 
     return (
         //name
-        <div>
+        <div className='sticky top-5'>
             <div className='flex mt-[70px] items-center' >
                 <div>
                     <div className="avatar">
@@ -89,12 +89,12 @@ const Cart = ({ cart }) => {
             {/* add a break */}
             <h2 className='mt-[50px] text-xl font-bold'>Add a Break</h2>
 
-            <div className='mt-[10px] flex gap-3 rounded-lg bg-red-200 p-3'>
-                <h4 onClick={(e) => handleBreakTime(e)} className='rounded-full border-2 p-2 text-lg bg-slate-50'>1hr</h4>
-                <h4 onClick={(e) => handleBreakTime(e)} className='rounded-full border-2 p-2 text-lg bg-slate-50'>2hr</h4>
-                <h4 onClick={(e) => handleBreakTime(e)} className='rounded-full border-2 p-2 text-lg bg-slate-50'>3hr</h4>
-                <h4 onClick={(e) => handleBreakTime(e)} className='rounded-full border-2 p-2 text-lg bg-slate-50'>4hr</h4>
-                <h4 onClick={(e) => handleBreakTime(e)} className='rounded-full border-2 p-2 text-lg bg-slate-50'>5hr</h4>
+            <div className='mt-[10px] flex gap-3 rounded-lg bg-red-200 p-3 justify-between'>
+                <h4 onClick={(e) => handleBreakTime(e)} className='rounded-full border-2 p-1 text-lg bg-slate-50'>1hr</h4>
+                <h4 onClick={(e) => handleBreakTime(e)} className='rounded-full border-2 p-1 text-lg bg-slate-50'>2hr</h4>
+                <h4 onClick={(e) => handleBreakTime(e)} className='rounded-full border-2 p-1 text-lg bg-slate-50'>3hr</h4>
+                <h4 onClick={(e) => handleBreakTime(e)} className='rounded-full border-2 p-1 text-lg bg-slate-50'>4hr</h4>
+                <h4 onClick={(e) => handleBreakTime(e)} className='rounded-full border-2 p-1 text-lg bg-slate-50'>5hr</h4>
 
 
 
@@ -107,7 +107,7 @@ const Cart = ({ cart }) => {
             <h1 className='mt-[50px] text-xl font-bold' >Study Details</h1>
             <div className='mt-[10px] gap-3 rounded-lg bg-red-200 p-3'>
 
-                <div className='flex  space-x-[135px]'>
+                <div className='flex  space-x-[120px]'>
                     <h2>Study Time</h2>
                     <h4>{total}<span>Hours</span></h4>
                 </div>
@@ -122,6 +122,8 @@ const Cart = ({ cart }) => {
                     <h4>{items}<span></span></h4>
                 </div>
             </div>
+
+            <button className="bg-sky-800 w-full mt-20 h-10 btn btn-sm my-4">Activity Completed</button>
         </div>
     );
 };
