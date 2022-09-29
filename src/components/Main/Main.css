@@ -1,0 +1,10 @@
+.container {
+    width: 95%;
+    margin: auto;
+}
+
+/* @media only screen and (max-width: 650px) {
+    .flip div:nth-of-type(2) {
+        order: 1;
+    }
+} */

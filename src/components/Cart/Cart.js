@@ -3,8 +3,11 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCoffee, faShoppingBag, faLocation } from '@fortawesome/free-solid-svg-icons'
 
 const Cart = ({ cart }) => {
+
+    let value = 0;
     const handleBreakTime = (e) => {
-        console.log(e.target.innerText);
+        value = e.target.innerText;
+        console.log(value);
     }
     // console.log(cart)
     // console.log(cart)
@@ -76,13 +79,13 @@ const Cart = ({ cart }) => {
                 </div>
 
             </div>
-
+            {/* //breaktime */}
             <div className='mt-[20px] gap-3 rounded-lg bg-red-200 p-3 '>
 
 
                 <div className='flex space-x-[135px]'>
                     <h2>Break Time</h2>
-                    <h4><span>Hours</span></h4>
+                    <h4>{value}<span>Hours</span></h4>
                 </div>
             </div>
         </div>

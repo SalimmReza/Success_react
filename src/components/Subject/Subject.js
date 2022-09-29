@@ -5,7 +5,7 @@ const Subject = ({ subject, handleAddToCart }) => {
     // console.log(subject, handleAddToCart)
     const { img, maxage, minage, name, time, price } = subject;
     return (
-        <div className="card w-96 bg-base-100 shadow-xl">
+        <div className="card w-100% bg-base-100 shadow-xl">
             <figure><img src={img} alt="Shoes" /></figure>
             <div className="card-body">
                 <h2 className="card-title">
