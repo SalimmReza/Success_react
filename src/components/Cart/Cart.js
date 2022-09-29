@@ -1,26 +1,55 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCoffee, faShoppingBag, faLocation } from '@fortawesome/free-solid-svg-icons'
 
-const Cart = ({ cart }) => {
-    const [brk, setBrk] = useState([]);
 
+//to get data FROM LS
 
-    let value = 0;
-    const handleBreakTime = (e) => {
-
-        const newCart = [e.target.innerText];
-        setBrk(newCart);
-        // console.log(newCart)
-
+const getLocalData = () => {
+    let list = localStorage.getItem('time');
+    if (list) {
+        return JSON.parse(localStorage.getItem('time'));
+    } else {
+        return [];
     }
-    // console.log(cart)
-    // console.log(cart)
+}
+
+
+
+const Cart = ({ cart }) => {
+    // const [brk, setBrk] = useState([]);
+    const [items, setItems] = useState(getLocalData());
+
     let total = 0;
     for (const product of cart) {
         total += product.time;
 
     }
+
+
+    const handleBreakTime = (e) => {
+        // const newCart = [e.target.innerText];
+        // if (!items) {
+        //     setItems(newCart);
+        // } else {
+        //     setItems([items]);
+        //     setItems('');
+        // }
+
+        const newCart = [e.target.innerText];
+        setItems(newCart);
+        console.log(newCart)
+
+    }
+
+
+
+    //add data to local storage
+    useEffect(() => {
+        localStorage.setItem('time', JSON.stringify(items))
+    }, [items]);
+
+
     return (
         //name
         <div>
@@ -90,7 +119,7 @@ const Cart = ({ cart }) => {
 
                 <div className='flex space-x-[135px]'>
                     <h2>Break Time</h2>
-                    <h4>{brk}<span></span></h4>
+                    <h4>{items}<span></span></h4>
                 </div>
             </div>
         </div>

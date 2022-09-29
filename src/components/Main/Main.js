@@ -19,6 +19,9 @@ const Main = () => {
         setCart(newArray);
 
     }
+
+
+
     return (
         <div className='grid   sm:grid-cols-1 lg:grid-cols-4 gap-10 container '>
             <div className=' sm:col-span-1 lg:col-span-3  gap-10 sm:grid grid-cols-1  lg:grid-cols-3'>
@@ -35,7 +38,7 @@ const Main = () => {
                 }
 
             </div>
-            <div className='px-6 sm:mb-10 bg-white-100 shadow-lg shadow-indigo-500/50 '>
+            <div className='px-6 sm:mb-10 lg:mb-0 bg-white-100 shadow-lg shadow-indigo-500/50 '>
                 <Cart cart={cart}></Cart>
 
 
