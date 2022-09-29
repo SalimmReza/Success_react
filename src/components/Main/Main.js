@@ -1,16 +1,20 @@
 import React, { useEffect, useState } from 'react';
-import Personal from '../components/PersonalInfo/Personal';
-import Subjects from '../components/Subjects/Subjects';
-import './Main.css'
+import Cart from '../Cart/Cart';
+import Subject from '../Subject/Subject';
 
 const Main = () => {
-
     const [subjects, setSubjects] = useState([]);
     useEffect(() => {
         fetch('activities.json')
             .then(res => res.json())
             .then(data => setSubjects(data))
-    }, [])
+    }, []);
+
+
+    const handleAddToCart = (subject) => {
+        console.log('clicked')
+
+    }
     return (
         <div className='grid grid-cols-4 gap-10 '>
             <div className='col-span-3 gap-10 grid grid-cols-3'>
@@ -19,19 +23,19 @@ const Main = () => {
                     <h4>Select your subjects to study</h4>
                 </div>
                 {
-                    subjects.map(subject => <Subjects
+                    subjects.map(subject => <Subject
                         subject={subject}
-                        key={subject.id}
-                    ></Subjects>)
+                        handleAddToCart={handleAddToCart}
+                    ></Subject>)
                 }
 
             </div>
             <div className='px-6'>
-                <Personal></Personal>
+                <Cart></Cart>
+
+
             </div>
         </div>
-
-
     );
 };
 

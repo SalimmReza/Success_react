@@ -2,7 +2,7 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCoffee, faShoppingBag, faLocation } from '@fortawesome/free-solid-svg-icons'
 
-const Personal = () => {
+const Cart = () => {
     return (
         //name
         <div>
@@ -44,10 +44,10 @@ const Personal = () => {
 
             <div className='mt-[10px] flex gap-3 rounded-lg bg-red-200 p-3'>
                 <h4 className='rounded-full border-2 p-2 text-lg bg-slate-50'>1hr</h4>
-                <h4 className='rounded-full border-2 p-2 text-lg bg-slate-50'>1hr</h4>
-                <h4 className='rounded-full border-2 p-2 text-lg bg-slate-50'>1hr</h4>
-                <h4 className='rounded-full border-2 p-2 text-lg bg-slate-50'>1hr</h4>
-                <h4 className='rounded-full border-2 p-2 text-lg bg-slate-50'>1hr</h4>
+                <h4 className='rounded-full border-2 p-2 text-lg bg-slate-50'>2hr</h4>
+                <h4 className='rounded-full border-2 p-2 text-lg bg-slate-50'>3hr</h4>
+                <h4 className='rounded-full border-2 p-2 text-lg bg-slate-50'>4hr</h4>
+                <h4 className='rounded-full border-2 p-2 text-lg bg-slate-50'>5hr</h4>
 
 
 
@@ -62,7 +62,7 @@ const Personal = () => {
 
                 <div className='flex  space-x-[135px]'>
                     <h2>Study Time</h2>
-                    <h4 className=''>0<span>Hours</span></h4>
+                    <h4><span>Hours</span></h4>
                 </div>
 
             </div>
@@ -72,12 +72,11 @@ const Personal = () => {
 
                 <div className='flex space-x-[135px]'>
                     <h2>Break Time</h2>
-                    <h4 className=''>0<span>Hours</span></h4>
+                    <h4><span>Hours</span></h4>
                 </div>
             </div>
         </div>
-
     );
 };
 
-export default Personal;
+export default Cart;

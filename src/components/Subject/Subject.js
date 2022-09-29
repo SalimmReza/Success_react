@@ -1,11 +1,10 @@
 import React from 'react';
 
-const Subjects = (props) => {
-    const { img, maxage, minage, name, time } = props.subject
-    // console.log(props.subject)
+const Subject = ({ subject, handleAddToCart }) => {
+    // console.log(subject, handleAddToCart)
     return (
         <div className="card w-96 bg-base-100 shadow-xl">
-            <figure><img src={img} alt="Shoes" /></figure>
+            <figure><img src="" alt="Shoes" /></figure>
             <div className="card-body">
                 <h2 className="card-title">
                     Shoes!
@@ -13,13 +12,13 @@ const Subjects = (props) => {
                 </h2>
                 <p>If a dog chews shoes whose shoes does he choose?</p>
                 <div className="card-actions justify-end">
-                    <div className="badge badge-outline">Age: {minage}</div>
-                    <div className="badge badge-outline">Time Required: {time}</div>
+                    <div className="badge badge-outline">Age: { }</div>
+                    <div className="badge badge-outline">Time Required: { }</div>
                 </div>
-                <button className="btn btn-sm">Small</button>
+                <button onClick={() => handleAddToCart(subject)} className="btn btn-sm">Small</button>
             </div>
         </div>
     );
 };
 
-export default Subjects;
+export default Subject;
