@@ -4,6 +4,7 @@ import Subject from '../Subject/Subject';
 
 const Main = () => {
     const [subjects, setSubjects] = useState([]);
+    const [cart, setCart] = useState([]);
     useEffect(() => {
         fetch('activities.json')
             .then(res => res.json())
@@ -12,7 +13,9 @@ const Main = () => {
 
 
     const handleAddToCart = (subject) => {
-        console.log('clicked')
+        console.log(subject)
+        const newArray = [...cart, subject];
+        setCart(newArray);
 
     }
     return (
@@ -25,13 +28,14 @@ const Main = () => {
                 {
                     subjects.map(subject => <Subject
                         subject={subject}
+                        key={subject.id}
                         handleAddToCart={handleAddToCart}
                     ></Subject>)
                 }
 
             </div>
             <div className='px-6'>
-                <Cart></Cart>
+                <Cart cart={cart}></Cart>
 
 
             </div>

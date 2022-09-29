@@ -2,7 +2,14 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCoffee, faShoppingBag, faLocation } from '@fortawesome/free-solid-svg-icons'
 
-const Cart = () => {
+const Cart = ({ cart }) => {
+    // console.log(cart)
+    // console.log(cart)
+    let total = 0;
+    for (const product of cart) {
+        total += product.time;
+
+    }
     return (
         //name
         <div>
@@ -62,7 +69,7 @@ const Cart = () => {
 
                 <div className='flex  space-x-[135px]'>
                     <h2>Study Time</h2>
-                    <h4><span>Hours</span></h4>
+                    <h4>{total}<span>Hours</span></h4>
                 </div>
 
             </div>
