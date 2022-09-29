@@ -75,7 +75,7 @@ const Cart = ({ cart }) => {
             {/* local info */}
             <div className='mt-[50px] flex gap-10 rounded-lg bg-red-200 p-3'>
                 <div>
-                    <h3 className='text-lg'>10<span className='text-zinc-500'>kg</span></h3>
+                    <h3 className='text-lg'>50<span className='text-zinc-500'>kg</span></h3>
                     <p>Weight</p>
                 </div>
                 <div>
@@ -92,7 +92,7 @@ const Cart = ({ cart }) => {
             {/* add a break */}
             <h2 className='mt-[50px] text-xl font-bold'>Add a Break</h2>
 
-            <div className='mt-[10px] flex gap-3 rounded-lg bg-red-200 p-3 justify-between'>
+            <div className='mt-[10px] flex gap-3 rounded-lg bg-red-200 p-3 justify-between cursor-pointer'>
                 <h4 onClick={(e) => handleBreakTime(e)} className='rounded-full border-2 p-1 text-lg bg-slate-50'>1hr</h4>
                 <h4 onClick={(e) => handleBreakTime(e)} className='rounded-full border-2 p-1 text-lg bg-slate-50'>2hr</h4>
                 <h4 onClick={(e) => handleBreakTime(e)} className='rounded-full border-2 p-1 text-lg bg-slate-50'>3hr</h4>
@@ -112,7 +112,7 @@ const Cart = ({ cart }) => {
 
                 <div className='flex  space-x-[120px]'>
                     <h2>Study Time</h2>
-                    <h4>{total}<span>Hours</span></h4>
+                    <h4 className='font-bold'>{total}<span>Hours</span></h4>
                 </div>
 
             </div>
@@ -122,7 +122,7 @@ const Cart = ({ cart }) => {
 
                 <div className='flex space-x-[135px]'>
                     <h2>Break Time</h2>
-                    <h4>{items}<span></span></h4>
+                    <h4 className='font-bold'>{items}<span></span></h4>
                 </div>
             </div>
 

@@ -14,8 +14,8 @@ const Subject = ({ subject, handleAddToCart }) => {
                 </h2>
                 <p>{description}</p>
                 <div className="card-actions justify-end">
-                    <div className="badge badge-outline">Age: {minage} - {maxage}</div>
-                    <div className="badge badge-outline">
+                    <div className="badge badge-outline font-bold">Age: {minage} - {maxage}</div>
+                    <div className="badge badge-outline font-bold">
                         <h4>Spent Time: {time}hr</h4></div>
                 </div>
                 <button onClick={() => handleAddToCart(subject)} className="bg-sky-800 btn btn-sm mt-4">Add To List</button>
