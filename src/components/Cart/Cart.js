@@ -3,6 +3,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCoffee, faShoppingBag, faLocation } from '@fortawesome/free-solid-svg-icons'
 
 const Cart = ({ cart }) => {
+    const handleBreakTime = (e) => {
+        console.log(e.target.innerText);
+    }
     // console.log(cart)
     // console.log(cart)
     let total = 0;
@@ -50,11 +53,11 @@ const Cart = ({ cart }) => {
             <h2 className='mt-[50px] text-xl font-bold'>Add a Break</h2>
 
             <div className='mt-[10px] flex gap-3 rounded-lg bg-red-200 p-3'>
-                <h4 className='rounded-full border-2 p-2 text-lg bg-slate-50'>1hr</h4>
-                <h4 className='rounded-full border-2 p-2 text-lg bg-slate-50'>2hr</h4>
-                <h4 className='rounded-full border-2 p-2 text-lg bg-slate-50'>3hr</h4>
-                <h4 className='rounded-full border-2 p-2 text-lg bg-slate-50'>4hr</h4>
-                <h4 className='rounded-full border-2 p-2 text-lg bg-slate-50'>5hr</h4>
+                <h4 onClick={(e) => handleBreakTime(e)} className='rounded-full border-2 p-2 text-lg bg-slate-50'>1hr</h4>
+                <h4 onClick={(e) => handleBreakTime(e)} className='rounded-full border-2 p-2 text-lg bg-slate-50'>2hr</h4>
+                <h4 onClick={(e) => handleBreakTime(e)} className='rounded-full border-2 p-2 text-lg bg-slate-50'>3hr</h4>
+                <h4 onClick={(e) => handleBreakTime(e)} className='rounded-full border-2 p-2 text-lg bg-slate-50'>4hr</h4>
+                <h4 onClick={(e) => handleBreakTime(e)} className='rounded-full border-2 p-2 text-lg bg-slate-50'>5hr</h4>
 
 
 
