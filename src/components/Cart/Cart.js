@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCoffee, faShoppingBag, faLocation } from '@fortawesome/free-solid-svg-icons'
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 //to get data FROM LS
@@ -49,7 +51,8 @@ const Cart = ({ cart }) => {
         localStorage.setItem('time', JSON.stringify(items))
     }, [items]);
 
-
+    //toast
+    const notify = () => toast("Activity Completed!");
     return (
         //name
         <div className='sticky top-5'>
@@ -123,7 +126,9 @@ const Cart = ({ cart }) => {
                 </div>
             </div>
 
-            <button className="bg-sky-800 w-full mt-20 h-10 btn btn-sm my-4">Activity Completed</button>
+            <button className="bg-sky-800 w-full mt-20 h-10 btn btn-sm my-4" onClick={notify}>Activity Completed</button>
+
+            <ToastContainer />
         </div>
     );
 };

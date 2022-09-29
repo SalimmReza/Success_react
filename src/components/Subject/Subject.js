@@ -6,7 +6,7 @@ const Subject = ({ subject, handleAddToCart }) => {
     const { img, maxage, minage, name, time, description, old } = subject;
     return (
         <div className="card w-100% bg-base-100 shadow-xl mt-4">
-            <figure><img src={img} className="h-[250px] w-full" alt="Shoes" /></figure>
+            <figure><img src={img} className="h-[200px] w-full" alt="Shoes" /></figure>
             <div className="card-body">
                 <h2 className="card-title">
                     {name}
